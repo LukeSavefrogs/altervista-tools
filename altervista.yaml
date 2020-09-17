@@ -1,0 +1,22 @@
+username: test
+password: foobar
+
+database:
+  - name: my_test
+    # -------------- Tabelle --------------
+    tables: true        # Array | true
+
+
+    # -------------- Opzioni specifiche al formato --------------
+    sql_structure_or_data: structure_and_data       # structure | data | structure_and_data
+    sql_use_transaction: false       # true | false
+    sql_disable_fk_checks: false       # true | false
+
+
+    # -------------- Opzioni di creazione dell'oggetto --------------
+    sql_add_drop_table_statement: true        # true | false
+    sql_add_create_procedure_statement: true        # true | false
+
+
+    # -------------- Data creation options --------------
+    sql_truncate_before_insert: false        # true | false
